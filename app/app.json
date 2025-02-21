@@ -1,0 +1,51 @@
+{
+    "id": "26035b0c-5687-4db8-a894-291de990594e",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "avatar.png",
+    "author": {
+        "name": "Amarta Waghani",
+        "homepage": "amartawaghani@gmail.com",
+        "support": "amartawaghani@gmail.com"
+    },
+    "name": "AI Chat Summarizer",
+    "nameSlug": "ai-chat-summarizer-amartawaghani",
+    "classFile": "ThreadSummarizerApp.ts",
+    "description": "An AI assistant that summarizes conversations in Rocket.Chat",
+    "implements": [],
+    "permissions": [
+        {
+            "name": "user.read"
+        },
+        {
+            "name": "user.write"
+        },
+        {
+            "name": "room.read"
+        },
+        {
+            "name": "room.write"
+        },
+        {
+            "name": "message.read"
+        },
+        {
+            "name": "message.write"
+        },
+        {
+            "name": "slashcommand"
+        },
+        {
+            "name": "api"
+        },
+        {
+            "name": "networking"
+        },
+        {
+            "name": "threads.read"
+        },
+        {
+            "name": "upload.read"
+        }
+    ]
+}
