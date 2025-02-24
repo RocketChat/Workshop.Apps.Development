@@ -62,8 +62,13 @@ rc-apps package
   }
   ```
   > Note: replace the `your_server_url`, `your_username` and `your_password` with the server URL shared in the room, your username and password.
-  
+
 Then run the following command to deploy the app:
 ```
 rc-apps deploy
 ```
+
+9. Modify the API call to the LLM from `http://llama3-8b` to `http://llama3-8b:1234` and try out the slash command. 
+
+> (Hint: Try modifying the settings key `llama3-8b` in the `setting.ts` file to `llama3-8b:1234`)
+10. Try out the slash command in the Rocket.Chat server.
