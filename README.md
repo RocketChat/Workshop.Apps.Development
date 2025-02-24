@@ -3,6 +3,10 @@ Guide to get started with Rocket.Chat Apps Development Workshop.
 
 ## Getting Started
 
+### Requirements
+- Node.js v20.18.1
+- Unix-based OS (Linux, MacOS, WSL2)
+
 1. Install `rc-apps` globally:
 
 ```bash
@@ -39,6 +43,7 @@ cd Apps.Chat.Summarize/app
   - `author` - Modify to include your name.
 - Replace the `icon.png` file with your own icon. We recommend using an AI-generated image. Consider using prompts related to your initial. Use a prompt like '[your concept here], avatar' at an AI image generator like [https://image.pollinations.ai/](https://image.pollinations.ai/).
 > Note you can modify the text as `https://image.pollinations.ai/prompt/{prompt}` where `{prompt}` is the text you want to generate the image for.
+> Note: Make sure to delete the `icon.png` file before replacing it with your own icon. And make sure the new icon is named `icon.png`, with the storage size not exceeding KBs.
 
 5. Open the file `/commands/SummarizeCommand.ts` and modify the `command` field to a unique command name. Currently, the value is `chat-summary` change it to something unique, e.g., `chat-summary-<yourname>`.
 
