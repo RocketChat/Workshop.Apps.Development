@@ -52,7 +52,18 @@ npm install
 rc-apps package
 ```
 
-8. Run the following command to deploy the app:
+8. Modify the `.rcappsconfig` file with  server URL, username and password.
+  E.g., 
+  ```
+  {
+    "url": "https://your_server_url",
+    "username": "your_username",
+    "password": "your_password"
+  }
+  ```
+  > Note: replace the `your_server_url`, `your_username` and `your_password` with the server URL shared in the room, your username and password.
+  
+Then run the following command to deploy the app:
 ```
-rc-apps deploy --url <your_server_url> --username <your_username> --password <your_password>
+rc-apps deploy
 ```
