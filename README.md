@@ -77,3 +77,5 @@ rc-apps deploy
 
 > (Hint: Try modifying the settings key and packageValue `llama3-8b` in the `setting.ts` file to `llama3-8b:1234`)
 10. Try out the slash command in the Rocket.Chat server.
+
+11. If you are able to successfully deploy the app and try out the slash command (it will return a summary), congratulations!🎉 For the next steps, please refer to the [Apps documentation](https://developer.rocket.chat/docs/rocketchat-apps-engine) to familiarize yourself with the Apps development and try to understand the code you have modified.
