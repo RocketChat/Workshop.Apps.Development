@@ -75,5 +75,5 @@ rc-apps deploy
 
 9. Modify the API call to the LLM from `http://llama3-8b` to `http://llama3-8b:1234` and try out the slash command. 
 
-> (Hint: Try modifying the settings key `llama3-8b` in the `setting.ts` file to `llama3-8b:1234`)
+> (Hint: Try modifying the settings key and packageValue `llama3-8b` in the `setting.ts` file to `llama3-8b:1234`)
 10. Try out the slash command in the Rocket.Chat server.
