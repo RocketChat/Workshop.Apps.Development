@@ -5,77 +5,115 @@ Guide to get started with Rocket.Chat Apps Development Workshop.
 
 ### Requirements
 - Node.js v20.18.1
-- Unix-based OS (Linux, MacOS, WSL2)
+- Unix-based OS (Linux, macOS, WSL2)
 
-1. Install `rc-apps` globally:
+### Part 1: Deploying Your First Rocket.Chat App
+In this part, you'll learn how to deploy a summarization app and implement a slash command.
 
-```bash
-  npm install -g @rocket.chat/apps-cli
-```
-
-To verify that the installation was successful, run:
+#### 1. Install the Rocket.Chat Apps CLI
+Install `rc-apps` globally:
 
 ```bash
-  rc-apps -v
+npm install -g @rocket.chat/apps-cli
 ```
-The output should be the version of the `rc-apps` CLI. Example:
+
+Verify the installation:
+
+```bash
+rc-apps -v
+```
+
+You should see the CLI version information:
 
 ```bash
 @rocket.chat/apps-cli/1.12.0 darwin-arm64 node-v20.18.1
 ```
 
-> Notice the "darwin-arm64" part of the output. This is the platform that the CLI is running on. The platform will be different depending on the operating system you are using.
+> **Note:** The platform information (e.g., "darwin-arm64") will differ depending on your operating system.
 
-2. Clone the repository:
-```
+#### 2. Clone the repository
+
+```bash
 git clone https://github.com/RocketChat/Apps.Chat.Summarize.git
 ```
 
-3. Change to the directory of the repository:
-```
+#### 3. Navigate to the app directory
+
+```bash
 cd Apps.Chat.Summarize/app 
 ```
 
-4. Modify the following:
+#### 4. Personalize your app
+Modify the following files:
+
 - In the `app.json` file:
-  - `nameSlug` - The App username, which must be unique. Currently, the value is `ai-chat-summarizer` change it to something unique, e.g., `ai-chat-summarizer-<yourname>`.
-  - `id` - The App UUID, which must be unique. You can generate a new UUID using an online UUID generator. Head to [https://www.uuidgenerator.net/version4](https://www.uuidgenerator.net/version4) and click on the "Generate" button. Copy the generated UUID and paste it in the `id` field. Please do **NOT** use `0034268f-e49a-4113-be51-4a5ca77aeeb1` as it is already in use.
-  - `author` - Modify to include your name.
-- Replace the `icon.png` file with your own icon. We recommend using an AI-generated image. Consider using prompts related to your initial. Use a prompt like '[your concept here], avatar' at an AI image generator like [https://image.pollinations.ai/](https://image.pollinations.ai/).
-> Note you can modify the text as `https://image.pollinations.ai/prompt/{prompt}` where `{prompt}` is the text you want to generate the image for.
-> Note: Make sure to delete the `icon.png` file before replacing it with your own icon. And make sure the new icon is named `icon.png`, with the storage size not exceeding KBs.
+  - Change `nameSlug` to a unique value (e.g., `ai-chat-summarizer-<yourname>`)
+  - Generate a new UUID at [uuidgenerator.net](https://www.uuidgenerator.net/version4) for the `id` field
+    - **Important:** Do NOT use `0034268f-e49a-4113-be51-4a5ca77aeeb1`
+  - Update the `author` field with your name
 
-5. Open the file `/commands/SummarizeCommand.ts` and modify the `command` field to a unique command name. Currently, the value is `chat-summary` change it to something unique, e.g., `chat-summary-<yourname>`.
+- Replace the `icon.png` file:
+  1. Delete the existing icon
+  2. Create a new icon (recommend using AI image generation)
+  3. You can use [Pollinations.AI](https://image.pollinations.ai/prompt/YOUR_INITIAL_avatar) with your initial
+  4. Save as `icon.png` (keep file size small)
 
-6. Run the following command to install the dependencies:
-```
+#### 5. Customize your command
+Open `/commands/SummarizeCommand.ts` and change the `command` field to a unique name (e.g., `<yourname>-chat-summary`).
+
+#### 6. Install dependencies
+
+```bash
 npm install
 ```
 
-7. Run the following command to build the app:
-```
+#### 7. Build your app
+
+```bash
 rc-apps package
 ```
 
-8. Modify the `.rcappsconfig` file with  server URL, username and password.
-  E.g., 
-  ```
-  {
-    "url": "https://your_server_url",
-    "username": "your_username",
-    "password": "your_password"
-  }
-  ```
-  > Note: replace the `your_server_url`, `your_username` and `your_password` with the server URL shared in the room, your username and password.
+#### 8. Configure and deploy
+Edit the `.rcappsconfig` file with your credentials:
 
-Then run the following command to deploy the app:
+```json
+{
+  "url": "https://workspace_server_url",
+  "username": "your_username",
+  "password": "your_password"
+}
 ```
+
+> **Important:** Use the server URL shared in the workshop room along with your personal credentials.
+
+Deploy your app:
+
+```bash
 rc-apps deploy
 ```
 
-9. Modify the API call to the LLM from `http://llama3-8b` to `http://llama3-8b:1234` and try out the slash command. 
+#### 9. Update the LLM API endpoint
+Modify the API call from `http://llama3-8b` to `http://llama3-8b:1234`
 
-> (Hint: Try modifying the settings key and packageValue `llama3-8b` in the `setting.ts` file to `llama3-8b:1234`)
-10. Try out the slash command in the Rocket.Chat server.
+> **Hint:** Look for the `llama3-8b` settings key in the `setting.ts` file and update it to `llama3-8b:1234`
 
-11. If you are able to successfully deploy the app and try out the slash command (it will return a summary), congratulations!🎉 For the next steps, please refer to the [Apps documentation](https://developer.rocket.chat/docs/rocketchat-apps-engine) to familiarize yourself with the Apps development and try to understand the code you have modified.
+> **Note:** The API call is made to `http://llama3-8b:1234/v1/chat/completions` so `llama3-8b` is the hostname and `1234` the port.
+
+#### 10. Test your slash command
+Type `/<yourname>-chat-summary` in any Rocket.Chat channel and press Enter.
+
+### Part 2: Enabling Add-ons
+
+1. Navigate to **Administration** (kebab menu) → **Marketplace**
+2. Select the **Private Apps** tab
+3. Find and click on your deployed app
+4. Go to the **Settings** tab
+5. In the **Summary add-ons** section, select any one add-on
+6. Click **Save**
+7. Test your command again with `/<yourname>-chat-summary`
+8. Verify that you see the chat summary plus the selected add-on functionality
+9. Take a screenshot of your successful result
+10. Share your screenshot in the workshop channel along with your email address to receive an invitation to the Workshop Meetup
+
+## Next Steps
+To deepen your understanding, explore the [Rocket.Chat Apps documentation](https://developer.rocket.chat/docs/rocketchat-apps-engine) and most importantly, **have fun!** understading the App code you just deployed and how to improve it.
