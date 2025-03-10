@@ -7,6 +7,13 @@ Guide to get started with Rocket.Chat Apps Development Workshop.
 - Node.js v20.18.1
 - Unix-based OS (Linux, macOS, WSL2)
 
+### Pre-requisites
+
+1. Join the Workshop server workspace shared in the workshop room.
+2. Join the room `#challengechat` in the workshop server.
+> **Hint**: Find the room under the **Directory** tab in the left sidebar.
+3. Note down the server URL and your credentials (username and password) for the workshop server.
+
 ### Part 1: Deploying Your First Rocket.Chat App
 In this part, you'll learn how to deploy a summarization app and implement a slash command.
 
@@ -100,7 +107,7 @@ Modify the API call from `http://llama3-8b` to `http://llama3-8b:1234`
 > **Note:** The API call is made to `http://llama3-8b:1234/v1/chat/completions` so `llama3-8b` is the hostname and `1234` the port.
 
 #### 10. Test your slash command
-Type `/<yourname>-chat-summary` in any Rocket.Chat channel and press Enter.
+Type `/<yourname>-chat-summary` in the thread on the `#challengechat` channel and press Enter.
 
 ### Part 2: Enabling Add-ons
 
@@ -110,10 +117,15 @@ Type `/<yourname>-chat-summary` in any Rocket.Chat channel and press Enter.
 4. Go to the **Settings** tab
 5. In the **Summary add-ons** section, select any one add-on
 6. Click **Save**
-7. Test your command again with `/<yourname>-chat-summary`
+7. Test your command again with `/<yourname>-chat-summary` in the `#challengechat` channels' thread 
+> **For curious minds ✨**, the prompt for the add-on can be found in the [`/constants/prompt.ts`](https://github.com/RocketChat/Apps.Chat.Summarize/blob/main/app/constants/prompts.ts) file. You can modify the prompt to suit your needs.
 8. Verify that you see the chat summary plus the selected add-on functionality
 9. Take a screenshot of your successful result
 10. Share your screenshot in the workshop channel along with your email address to receive an invitation to the Workshop Meetup
 
 ## Next Steps
 To deepen your understanding, explore the [Rocket.Chat Apps documentation](https://developer.rocket.chat/docs/rocketchat-apps-engine) and most importantly, **have fun!** understading the App code you just deployed and how to improve it.
+
+## Resources
+- [Rocket.Chat Apps Documentation](https://developer.rocket.chat/docs/rocketchat-apps-engine)
+- [Prompt Engineering](https://www.promptingguide.ai/)
