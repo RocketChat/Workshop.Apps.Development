@@ -80,7 +80,12 @@ npm install
 rc-apps package
 ```
 
-#### 8. Configure and deploy
+#### 8. Update the LLM API endpoint
+Open the file [`/settings/settings.ts](https://github.com/RocketChat/Apps.Chat.Summarize/blob/main/app/settings/settings.ts) and modify the packageValue from `[llama3-8b](http://llama3-8b)` to `[http://llama3-8b.local:1234](http://llama3-8b.local:1234)`.
+
+> **Note:** The API call is made to `http://llama3-8b.local:1234/v1/chat/completions` so `llama3-8b.local` is the hostname and `1234` the port.
+
+#### 9. Configure and deploy
 Edit the `.rcappsconfig` file with your credentials:
 
 ```json
@@ -98,13 +103,6 @@ Deploy your app:
 ```bash
 rc-apps deploy
 ```
-
-#### 9. Update the LLM API endpoint
-Modify the API call from `http://llama3-8b` to `http://llama3-8b:1234`
-
-> **Hint:** Look for the `llama3-8b` settings key in the `setting.ts` file and update it to `llama3-8b:1234`
-
-> **Note:** The API call is made to `http://llama3-8b:1234/v1/chat/completions` so `llama3-8b` is the hostname and `1234` the port.
 
 #### 10. Test your slash command
 Type `/<yourname>-chat-summary` in the thread on the `#challengechat` channel and press Enter.
