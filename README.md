@@ -81,7 +81,7 @@ rc-apps package
 ```
 
 #### 8. Update the LLM API endpoint
-Open the file [`/settings/settings.ts](https://github.com/RocketChat/Apps.Chat.Summarize/blob/main/app/settings/settings.ts) and modify the packageValue from `[llama3-8b](http://llama3-8b)` to `[http://llama3-8b.local:1234](http://llama3-8b.local:1234)`.
+Open the file [`/settings/settings.ts`](https://github.com/RocketChat/Apps.Chat.Summarize/blob/main/app/settings/settings.ts) and modify the packageValue from `[http://llama3-8b](http://llama3-8b)` to `[http://llama3-8b.local:1234](http://llama3-8b.local:1234)`.
 
 > **Note:** The API call is made to `http://llama3-8b.local:1234/v1/chat/completions` so `llama3-8b.local` is the hostname and `1234` the port.
 
