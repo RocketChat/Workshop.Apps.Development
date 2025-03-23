@@ -8,7 +8,7 @@
         "homepage": "vipinchadhary1809@gmail.com",
         "support": "vipinchadhary1809@gmail.com"
     },
-    "name": "AI Chat Summarizer (demo)",
+    "name": "AI Chat Summarizer",
     "nameSlug": "ai-chat-summarizer-demo",
     "classFile": "ThreadSummarizerApp.ts",
     "description": "An AI assistant that summarizes conversations in Rocket.Chat",

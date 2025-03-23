@@ -9,7 +9,7 @@ export const settings: ISetting[] = [
 		i18nDescription: 'AI model to use for summarization.',
 		type: SettingType.SELECT,
 		values: [
-			{ key: 'llama3-8b:1234', i18nLabel: 'Llama3 8B' },
+			{ key: 'llama3-8b', i18nLabel: 'Llama3 8B' },
 			{ key: 'mistral-7b:1234', i18nLabel: 'Mistral 7B' },
 		],
 		required: true,
