@@ -1,0 +1,51 @@
+{
+    "id": "50a28349-4c4a-4e30-be36-bff3e8338f0c",
+    "version": "0.0.2",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Vipin Chaudhary",
+        "homepage": "vipinchadhary1809@gmail.com",
+        "support": "vipinchadhary1809@gmail.com"
+    },
+    "name": "AI Chat Summarizer",
+    "nameSlug": "ai-chat-summarizer-demo",
+    "classFile": "ThreadSummarizerApp.ts",
+    "description": "An AI assistant that summarizes conversations in Rocket.Chat",
+    "implements": [],
+    "permissions": [
+        {
+            "name": "user.read"
+        },
+        {
+            "name": "user.write"
+        },
+        {
+            "name": "room.read"
+        },
+        {
+            "name": "room.write"
+        },
+        {
+            "name": "message.read"
+        },
+        {
+            "name": "message.write"
+        },
+        {
+            "name": "slashcommand"
+        },
+        {
+            "name": "api"
+        },
+        {
+            "name": "networking"
+        },
+        {
+            "name": "threads.read"
+        },
+        {
+            "name": "upload.read"
+        }
+    ]
+}
