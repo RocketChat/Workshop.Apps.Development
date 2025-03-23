@@ -52,8 +52,6 @@ export class SummarizeCommand implements ISlashCommand {
 			messages = await this.getThreadMessages(room, read, user, threadId);
 		}
 
-		await notifyMessage(room, read, user, messages, threadId);
-
 		let summary: string;
 		if (!threadId) {
 			const prompt = createSummaryPromptByTopics(messages);
