@@ -1,7 +1,7 @@
 {
 	"devDependencies": {
 		"@eslint/js": "^9.3.0",
-		"@rocket.chat/apps-engine": "^1.19.0",
+		"@rocket.chat/apps-engine": "^1.49.0",
 		"@types/eslint__js": "^8.42.3",
 		"@types/node": "14.14.6",
 		"eslint": "^8.57.0",
