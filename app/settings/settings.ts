@@ -14,7 +14,7 @@ export const settings: ISetting[] = [
 		],
 		required: true,
 		public: true,
-		packageValue: 'llama3-8b:1234',
+		packageValue: 'llama3-8b',
 	},
 	{
 		id: 'add-ons',
