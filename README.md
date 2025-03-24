@@ -142,7 +142,7 @@ In the `Marketplace`, you will be able to see these settings. For every add-ons 
 ### Where is the add-on code?
 
 <div style="text-align: center">
-<img src="https://github.com/user-attachments/assets/99005a33-a3c7-4a96-8374-5a39e97fdcf9" width="500">
+<img src="https://github.com/user-attachments/assets/c5b97ee5-9272-44a9-abea-6b048769b7ba" width="500">
 </div>
 
 Basically, this code only do
