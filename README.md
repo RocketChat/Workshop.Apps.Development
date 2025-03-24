@@ -41,13 +41,13 @@ You should see the CLI version information:
 #### 2. Clone the repository
 
 ```bash
-git clone https://github.com/RocketChat/Apps.Chat.Summarize.git
+git clone https://github.com/RocketChat/Workshop.Apps.Development.git
 ```
 
 #### 3. Navigate to the app directory
 
 ```bash
-cd Apps.Chat.Summarize/app 
+cd Workshop.Apps.Development/app 
 ```
 
 #### 4. Personalize your app
@@ -81,7 +81,7 @@ rc-apps package
 ```
 
 #### 8. Update the LLM API endpoint
-Open the file [`/settings/settings.ts`](https://github.com/RocketChat/Apps.Chat.Summarize/blob/main/app/settings/settings.ts) and modify the packageValue from `[http://llama3-8b](http://llama3-8b)` to `[http://llama3-8b.local:1234](http://llama3-8b.local:1234)`.
+Open the file [`/settings/settings.ts`](https://github.com/RocketChat/Workshop.Apps.Development/blob/main/app/settings/settings.ts) and modify the L12 key value and package value to `[llama3-8b.local:1234](http://llama3-8b.local:1234)`.
 
 > **Note:** The API call is made to `http://llama3-8b.local:1234/v1/chat/completions` so `llama3-8b.local` is the hostname and `1234` the port.
 
@@ -134,7 +134,7 @@ In the `Marketplace`, you will be able to see these settings. For every add-ons 
 5. In the **Summary add-ons** section, select any one add-on
 6. Click **Save**
 7. Test your command again with `/<yourname>-chat-summary` in the `#challengechat` channels' thread 
-> **For curious minds ✨**, the prompt for the add-on can be found in the [`/constants/prompt.ts`](https://github.com/RocketChat/Apps.Chat.Summarize/blob/main/app/constants/prompts.ts) file. You can modify the prompt to suit your needs.
+> **For curious minds ✨**, the prompt for the add-on can be found in the [`/constants/prompt.ts`](https://github.com/RocketChat/Workshop.Apps.Development/blob/main/app/constants/prompts.ts) file. You can modify the prompt to suit your needs.
 8. Verify that you see the chat summary plus the selected add-on functionality
 9. Take a screenshot of your successful result
 10. Share your screenshot in the workshop channel along with your email address to receive an invitation to the Workshop Meetup
