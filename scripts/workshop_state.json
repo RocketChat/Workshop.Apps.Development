@@ -1,0 +1,503 @@
+{
+  "batches": [
+    {
+      "week_label": "2026-W08",
+      "invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "room_id": "69973cf16453b27c52e77da2",
+      "source_file": "weekly_usernames.txt",
+      "selected_candidates": [
+        "rohitbansal",
+        "ragini.sharma",
+        "ahmadshah.donishyar",
+        "khizar.shah",
+        "rahian.santos",
+        "shivansh.chourasia",
+        "divyanshu.patil",
+        "kartik.doda",
+        "gaurav.kumar620",
+        "pratheek.ravikumar",
+        "raginisharma",
+        "srijna.bhargav",
+        "riya.kaurav",
+        "yashika.soni",
+        "ganesh.aggarwal"
+      ],
+      "invited_success": [
+        "rohitbansal",
+        "ragini.sharma",
+        "ahmadshah.donishyar",
+        "khizar.shah",
+        "rahian.santos",
+        "shivansh.chourasia",
+        "divyanshu.patil",
+        "kartik.doda",
+        "gaurav.kumar620",
+        "pratheek.ravikumar",
+        "srijna.bhargav",
+        "riya.kaurav",
+        "yashika.soni",
+        "ganesh.aggarwal"
+      ],
+      "invited_failed": [
+        {
+          "username": "raginisharma",
+          "error": "Cannot invite if no valid users are provided [error-empty-invite-list]"
+        }
+      ],
+      "cleanup": {
+        "kicked": [],
+        "failed": [],
+        "not_found": [],
+        "skipped_protected": [],
+        "messages_considered": 0,
+        "messages_deleted": 0,
+        "message_delete_failures": []
+      },
+      "dry_run": false
+    },
+    {
+      "week_label": "2026-W09",
+      "invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "room_id": "69973cf16453b27c52e77da2",
+      "source_file": "weekly_usernames.txt",
+      "selected_candidates": [
+        "raginisharma",
+        "ritesh.maurya",
+        "chandraprakash11040",
+        "daniel.nwachukwu",
+        "vivek.yadav.2026",
+        "amit.ashutosh",
+        "himanshu.mahto",
+        "ayushkumar",
+        "sezal.lagwal",
+        "saudarsh.pal",
+        "hanyucrocks",
+        "meet.jainn",
+        "ahmed.fikri",
+        "alphin.shajan",
+        "adiba.anjum",
+        "bijo.pa",
+        "fadhlan.bani",
+        "santam.roychoudhury",
+        "mohamed.dawoud",
+        "rehanshami007",
+        "tahany.emad",
+        "mithran.balachander",
+        "ishaan.sharma",
+        "ashwin.anand",
+        "kishan.patelx",
+        "ahmadyasser1",
+        "priya.varshini",
+        "harshita.gupta",
+        "suryansh.mishra",
+        "shivam.kalangan"
+      ],
+      "invited_success": [
+        "ritesh.maurya",
+        "chandraprakash11040",
+        "daniel.nwachukwu",
+        "vivek.yadav.2026",
+        "amit.ashutosh",
+        "himanshu.mahto",
+        "sezal.lagwal",
+        "saudarsh.pal",
+        "meet.jainn",
+        "ahmed.fikri",
+        "alphin.shajan",
+        "adiba.anjum",
+        "bijo.pa",
+        "fadhlan.bani",
+        "santam.roychoudhury",
+        "mohamed.dawoud",
+        "rehanshami007",
+        "tahany.emad",
+        "mithran.balachander",
+        "ishaan.sharma",
+        "ashwin.anand",
+        "kishan.patelx",
+        "ahmadyasser1",
+        "priya.varshini",
+        "harshita.gupta",
+        "suryansh.mishra",
+        "shivam.kalangan"
+      ],
+      "invited_failed": [
+        {
+          "username": "raginisharma",
+          "error": "Cannot invite if no valid users are provided [error-empty-invite-list]"
+        },
+        {
+          "username": "ayushkumar",
+          "error": "Cannot invite if no valid users are provided [error-empty-invite-list]"
+        },
+        {
+          "username": "hanyucrocks",
+          "error": "Cannot invite if no valid users are provided [error-empty-invite-list]"
+        }
+      ],
+      "welcome_message_sent": true,
+      "welcome_message_error": null,
+      "cleanup": {
+        "archive_room_id": "699e9e283ae5b36a0d53f251",
+        "kicked": [],
+        "failed": [],
+        "not_found": [],
+        "skipped_protected": [],
+        "moved": [
+          "rohitbansal",
+          "ragini.sharma",
+          "ahmadshah.donishyar",
+          "khizar.shah",
+          "rahian.santos",
+          "shivansh.chourasia",
+          "divyanshu.patil",
+          "kartik.doda",
+          "gaurav.kumar620",
+          "pratheek.ravikumar",
+          "srijna.bhargav",
+          "riya.kaurav",
+          "yashika.soni",
+          "ganesh.aggarwal"
+        ],
+        "move_failed": [],
+        "move_not_found": [],
+        "move_skipped_protected": [],
+        "messages_considered": 0,
+        "messages_deleted": 0,
+        "message_delete_failures": []
+      },
+      "dry_run": false
+    }
+  ],
+  "invited_index": {
+    "rohitbansal": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "ragini.sharma": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "ahmadshah.donishyar": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "khizar.shah": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "rahian.santos": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "shivansh.chourasia": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "divyanshu.patil": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "kartik.doda": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "gaurav.kumar620": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "pratheek.ravikumar": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "srijna.bhargav": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "riya.kaurav": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "yashika.soni": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "ganesh.aggarwal": {
+      "first_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "last_invited_at": "2026-02-19T16:46:32.602176+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W08"
+      ]
+    },
+    "ritesh.maurya": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "chandraprakash11040": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "daniel.nwachukwu": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "vivek.yadav.2026": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "amit.ashutosh": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "himanshu.mahto": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "sezal.lagwal": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "saudarsh.pal": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "meet.jainn": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "ahmed.fikri": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "alphin.shajan": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "adiba.anjum": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "bijo.pa": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "fadhlan.bani": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "santam.roychoudhury": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "mohamed.dawoud": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "rehanshami007": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "tahany.emad": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "mithran.balachander": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "ishaan.sharma": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "ashwin.anand": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "kishan.patelx": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "ahmadyasser1": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "priya.varshini": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "harshita.gupta": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "suryansh.mishra": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    },
+    "shivam.kalangan": {
+      "first_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "last_invited_at": "2026-02-25T07:04:22.713573+00:00",
+      "invite_count": 1,
+      "weeks": [
+        "2026-W09"
+      ]
+    }
+  },
+  "version": 1
+}

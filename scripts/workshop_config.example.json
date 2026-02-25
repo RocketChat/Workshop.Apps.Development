@@ -1,0 +1,14 @@
+{
+  "base_url": "https://open.rocket.chat",
+  "room_id": "YOUR_WORKSHOP_ROOM_ID",
+  "archive_room_id": "YOUR_ARCHIVE_ROOM_ID",
+  "weekly_invite_count": 15,
+  "send_welcome_message": true,
+  "welcome_message": "Hey everyone! 👋\n\nWelcome to the RC Apps AI Workshop onboarding channel. Glad to have you here.\n\nTo get started:\n1) Join the workspace (if you haven't already):\nhttps://safe.dev.rocket.chat/register/FSWsAEpirrrUtck7Du\n\n2) Check the challenge assignment here:\nhttps://safe.dev.rocket.chat/group/Challenge_Wave_1\n\nPlease try to complete the challenge as soon as possible, since we'll be prioritizing participants who finish early for the workshop (dates TBA).\n\nIf you run into any issues joining the workspace or accessing the challenge, just drop a message here.\nLooking forward to seeing what you build 🚀",
+  "protected_usernames": [
+    "workshop.host",
+    "sing.li"
+  ],
+  "state_file": "workshop_state.json",
+  "request_pause_seconds": 0.2
+}
