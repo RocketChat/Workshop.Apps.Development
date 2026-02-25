@@ -1,19 +1,87 @@
-## Helper Scripts
+## Workshop Scripts
 
-Automate repetitive tasks
+This folder now includes a single weekly workflow script:
 
-### Set up
-1. Install the required dependencies:
+- `workshop_manager.py`: manage weekly workshop room rotation.
+  - Pick top `N` unique usernames from a source list.
+  - Skip usernames that were already invited in past runs.
+  - Auto-detect private group vs public channel and call correct APIs.
+  - Move previous week's invited users to an archive room (or kick if archive room is not set).
+  - Optionally clear room messages.
+  - Invite the new batch.
+  - Post a default onboarding welcome message after successful invites.
+  - Persist history in `workshop_state.json`.
+
+## Setup
+
+1. Install dependencies:
    ```bash
+   cd scripts
    pip install -r requirements.txt
    ```
-   > **Note:** Recommended to use a virtual environment to avoid conflicts with other Python projects. `venv` is a good option.
+2. Configure environment variables:
+   - Copy `.env.example` to `.env` and fill:
+     - `RC_TOKEN`
+     - `RC_UID`
+     - `RC_RID`
+     - optionally `RC_URL`
+3. Configure workshop defaults:
+   - Copy `workshop_config.example.json` to `workshop_config.json`.
+   - Optional:
+     - `archive_room_id` (if set, old batch is moved here before new invites)
+     - `send_welcome_message` (`true`/`false`)
+     - `welcome_message` (custom message text)
 
-2. Create a `config.json` file in the same directory as the scripts. Use the provided `config.json.example` as a template. Fill in the required fields:
-3. Add an `.env` file in the same directory as the scripts. Use the provided `.env.example` as a template. 
+## Username Source File
 
-### This folder contains helper scripts to automate repetitive tasks.
-1. [app_delete.py](./app_delete.py): Delete the app from the server. It deletes the App that has `ThreadSummarizerApp.js` as the class file.
-2. [delete_user.py](./delete_user.py): Removes the user from the server. Paste the user joined notifications on L70 `user_text` from any room (e.g., `#general`) and run the script. It will remove the user from the server.
-3. [kick_users.py](./kick_users.py): Kicks all users from a private group. It will ask if you want to kick all users from the private group. If you answer `yes`, it will remove all users from the private group. Or exclude some users from the kick. 
-4. [invite_users.py](./invite_users.py): Invites all users to a private group. It will ask if you want to invite all users to the private group, pass on the indexes from the list defined in `config.json` file. 
+`workshop_manager.py` accepts:
+
+- `.txt`: one username per line (with or without `@`)
+- `.csv`: first column usernames (header optional)
+- `.json`: list of usernames, or objects containing `username` / `usernames` / `entries`
+
+## Weekly Workflow
+
+1. Preview selected users:
+   ```bash
+   python workshop_manager.py preview --source ./weekly_usernames.txt --limit 15
+   ```
+2. Rotate weekly batch (move previous to archive if configured, then invite new):
+   ```bash
+   python workshop_manager.py rotate --source ./weekly_usernames.txt --limit 15
+   ```
+3. Rotate and also clear room messages:
+   ```bash
+   python workshop_manager.py rotate --source ./weekly_usernames.txt --limit 15 --clear-messages --max-messages 1000
+   ```
+4. Dry run (no server mutations, no state updates):
+   ```bash
+   python workshop_manager.py rotate --source ./weekly_usernames.txt --limit 15 --dry-run
+   ```
+
+## Cleanup Only
+
+Move previous batch to archive room (or kick if not configured), without inviting:
+
+```bash
+python workshop_manager.py cleanup
+```
+
+Kick previous batch and clear messages:
+
+```bash
+python workshop_manager.py cleanup --clear-messages --max-messages 1000
+```
+
+## State Tracking
+
+The script stores run history in `workshop_state.json`:
+
+- `batches`: each invite run with week label, invited users, failures, cleanup results
+- `invited_index`: lookup of previously invited usernames with timestamps and invite count
+
+This state is used to filter out already invited users on future weeks.
+
+## Legacy Scripts
+
+Older scripts are still in this folder (`invite.py`, `kick_users.py`, etc.) but the recommended weekly flow is `workshop_manager.py`.
